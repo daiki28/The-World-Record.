@@ -15,26 +15,71 @@
             <li><a href="file:///Users/da1ki928/Desktop/test/index.html?itemName=&x=18&y=8#">TOP</a></li>
             <li><a href="file:///Users/da1ki928/Desktop/test/groupname.html">アーティスト誕生</a></li>
             <li><a href="">レコードの歴史</a></li>
+            <li><a href="">日本レコード大賞</a></li>
             <li><a href="">ニュース</a></li>
           </ul>
       </div>
       </div>
+          <div>
+              <form action="cgi-bin/example.cgi" method="post">
+              <input type="search" name="search" placeholder="キーワードを入力" title="年代やアーティスト名などで検索" autocomplete="on" class="srcbox PJAX" size="">
+              <input type="submit" name="submit" value="検索">
+           </div>
     </div>
      
     <div id="B">
-      <center><h3 class="section-title">お問い合わせ</h3></center>
+      
     </div>
      
     <div id="C">
-      <div class="contact-form">
-        
-        <p>メールアドレス</p>
-        <input>
-        <p>お問い合わせ内容</p>
-        <textarea></textarea>
-        <input class="contact-submit" type="submit" value="送信">
-      </div>
-     </div>
+      <h2 class="section-title">　　　　　　　　　　　　お問い合わせ</h2>
+      <table width="650">
+        <tbody><tr>
+        <th width="25%">ニックネーム<span class="textRed"></span></th>
+        <td><input name="お名前" maxlength="100" size="52" type="text"><input type="hidden" name="_indispen" value="お名前"> （全角）</td>
+        </tr>
+        <tr>
+        <th>フリガナ<span class="textRed">（必須）</span></th>
+        <td><input name="ふりがな" maxlength="100" size="52" type="text"><input type="hidden" name="_indispen" value="ふりがな"> （全角）</td>
+        </tr>
+        <tr>
+        <th>性別</th>
+        <td><input name="性別" value="男性" type="radio">男性
+        <input name="性別" value="女性" type="radio">女性</td>
+        </tr>
+        <tr>
+        <th>年齢</th>
+        <td><input name="年齢" maxlength="8" size="14" type="text">（半角）</td>
+        </tr>
+        <tr>
+        <th>メールアドレス<span class="textRed"><br></span></th>
+        <td><input name="メールアドレス" maxlength="100" size="52" type="text">
+        <input type="hidden" name="_emailset" value="メールアドレス">
+        <input type="hidden" name="_indispen" value="メールアドレス" >（半角）</td>
+        </tr>
+        <tr>
+        <th>どちらでこのページをお知りになりましたか?</th>
+        <td><input name="情報元" value="インターネット" type="checkbox">
+        インターネット
+        <input name="情報元" value="テレビ・ラジオ" type="checkbox">
+        テレビ・ラジオ
+        <input name="情報元" value="雑誌・新聞" type="checkbox">
+        雑誌・新聞<br>
+        <input name="情報元" value="その他" type="checkbox">
+        その他<br>
+        <input name="情報元（その他）" maxlength="50" size="52" type="text" placeholder="「その他」を選択した場合は媒体をこちらにご記入ください">
+        <br></td>
+        </tr>
+        <tr>
+        <th>お問い合わせ内容<span class="textRed"><br>
+        （必須）</span></th>
+        <td><textarea name="お問い合せ内容" cols="50" rows="7"></textarea><input type="hidden" name="_indispen" value="お問い合わせ内容"></td>
+        </tr>
+        </tbody></table>
+        <colspan="2" class="textCenter" style="padding:20px;">
+        <center><input type="submit" value="送信">
+        <input type="reset" value="リセット"></center>
+        <img src="img/img1.png" align="right" width="40%">
     </div>
      
     <div id="D">
